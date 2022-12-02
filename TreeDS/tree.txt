@@ -18,7 +18,7 @@ Binary Tree:
     last levele must have its keys as left as possible.
 
     >Degenerate Tree
-    exactly Parent node has exactly one child 
+     Parent node has exactly one child 
 
     >Skewed Trees
         >Left Skewed
