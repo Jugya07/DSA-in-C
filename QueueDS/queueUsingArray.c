@@ -1,10 +1,8 @@
 
     //Queue using array
-    //enqueue 0(1) increment b (initially -1) and insert at b
-    //dequeue 0(1) increment f (first element at f+1)
-    //b==f queue empty condition 
-    //b== size-1 queue full condition
-
+    //enqueue 0(1):  increment b (initially -1) and insert at b
+    //dequeue 0(1):  increment f (first element at f+1)
+ 
 #include<stdio.h>
 #include<stdlib.h>
 
