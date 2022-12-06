@@ -100,6 +100,20 @@ void inorder(struct Node *root)
     }
 }
 
+void dfs(struct Node *root){
+    struct Node *queue[100];
+    int front = 0, rear = 0;
+    queue[rear++] = root;
+    while(front!=rear){
+        struct Node *temp = queue[front++];
+        printf("%d ", temp->key);
+        if(temp->left!=NULL)
+            queue[rear++] = temp->left;
+        if(temp->right!=NULL)
+            queue[rear++] = temp->right;
+    }
+}
+
 int main(){
     struct Node *root = NULL;
     root = insert(root, 10);
@@ -108,6 +122,6 @@ int main(){
     root = insert(root, 40);
     root = insert(root, 50);
     root = insert(root, 25);
-    inorder(root);
+    dfs(root);
     return 0;
 }
