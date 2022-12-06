@@ -18,7 +18,7 @@ Binary Tree:
     last levele must have its keys as left as possible.
 
     >Degenerate Tree
-    exactly Parent node has exactly one child 
+     Parent node has exactly one child 
 
     >Skewed Trees
         >Left Skewed
@@ -36,3 +36,10 @@ Binary Tree:
     >Preorder: root -> left -> right
     >Postorder: left -> right -> root
 
+- - - - - - - - - - - - - - - - - 
+
+>AVL Tree
+    >Height balanced binary search tree.
+    >Height difference is not more than one.
+    >Balanced factor = height of right subtree - height of left subtree.
+    >|B.f|<=1
