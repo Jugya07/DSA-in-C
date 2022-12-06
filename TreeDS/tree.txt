@@ -36,3 +36,10 @@ Binary Tree:
     >Preorder: root -> left -> right
     >Postorder: left -> right -> root
 
+- - - - - - - - - - - - - - - - - 
+
+>AVL Tree
+    >Height balanced binary search tree.
+    >Height difference is not more than one.
+    >Balanced factor = height of right subtree - height of left subtree.
+    >|B.f|<=1
