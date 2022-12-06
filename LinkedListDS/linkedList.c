@@ -98,8 +98,11 @@ void display() {
 		return;
 	}
 	while (ptr != NULL){
-		printf("%d --> ", ptr->data);
+		printf("%d ", ptr->data);
 		ptr = ptr->next;
+		if(ptr != NULL){
+			printf("--> ");
+		}
 	}
 	printf("\n");
 }
