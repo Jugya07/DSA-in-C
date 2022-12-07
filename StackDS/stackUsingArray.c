@@ -3,7 +3,7 @@
 
 struct stack {
     int size;
-    int top;
+    int top;   
     int *a;
 };
 

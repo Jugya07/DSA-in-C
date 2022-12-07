@@ -34,10 +34,12 @@ int main(){
     q.f = q.b = 0;
     q.arr = (int *)malloc(q.size * sizeof(int));
     enqueue(&q, 10);
-    enqueue(&q, 20);
-    enqueue(&q, 30);
-    dequeue(&q);
-    enqueue(&q, 30);
-    enqueue(&q, 30);
+    printf("%d", q.b);
+    // enqueue(&q, 20);
+    // enqueue(&q, 30);
+    // dequeue(&q);
+    // enqueue(&q, 30);
+    // enqueue(&q, 30);
+    
     return 0;
 }

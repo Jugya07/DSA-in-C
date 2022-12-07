@@ -67,12 +67,12 @@ int stackTop(struct node *top){
 
 int main(){
     struct node *top= NULL ;
-    // top = push(top, 10);
-    // top = push(top, 20);
+    top = push(top, 10);
+    top = push(top, 20);
     // top = push(top, 30);
     // top = push(top, 40);
     // top = pop(top);n
     display(top);
-    printf("The value at position 3 is %d \n", peek(top, 3));
+    // printf("The value at position 3 is %d \n", peek(top, 3));
     printf("Stack Top value is %d\n",stackTop(top));
 }

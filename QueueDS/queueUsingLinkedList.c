@@ -5,6 +5,7 @@ struct Node{
     int data;
     struct Node *next;
 };
+
 struct Node *f = NULL;
 struct Node *r = NULL;
 
