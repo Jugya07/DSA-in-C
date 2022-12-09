@@ -35,3 +35,13 @@ Adjacency Matrix is a 2D array of size V x V where V is the number of vertices i
 
 - Other ways - Edge set, Compact List, Cost Adjacency List, etc.
 
+---------
+
+>## Graph Traversal
+
+- process of visiting each and every node of a graph
+- Two algorithms for graph traversal:  
+        `Breadth First search` - (Queue DS is used)  
+            In BFS , we start with a node  and start  exploring  its connected node.  The same process is repeated  with all the connecting nodes untill all the nodes are visited.   
+        `Depth First search` - (Stack DS is used)  
+            In DFS ,  we start with a node and start exploring its connected nodes keeping  on suspending  the exploration  of previous  nodes.
