@@ -11,20 +11,20 @@
 
 > Types of binary tree:
 
-- Full or strict Binary Tree
+- Full or strict Binary Tree  
   All nodes have either 0 or 2 nodes
 
-- Perfect Binary Tree
+- Perfect Binary Tree  
   Internal nodes have 2 children + all leaf nodes are on same level
 
-- Complete Binary Tree
+- Complete Binary Tree  
   All levels are completely filled except posssibly the last level +
   last levele must have its keys as left as possible.
 
-- Degenerate Tree
+- Degenerate Tree  
   Parent node has exactly one child
 
-- Skewed Trees
+- Skewed Trees  
   - Left Skewed
   - Right Skewed
 
@@ -33,7 +33,6 @@
 > REPRESENTATION:
 
 - Array :
-
   stores nodes from left to right at each level in a single array, place NULL in place of no children in a level
 
   - Linked REPRESENTATION:
