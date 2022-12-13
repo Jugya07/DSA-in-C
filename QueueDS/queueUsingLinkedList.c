@@ -60,8 +60,9 @@ int main(){
     enqueue(10);
     enqueue(20);
     enqueue(30);
+    enqueue(40);
     dequeue();
-    dequeue();
+    // dequeue();
     displayQueue();
     return 0;
 }

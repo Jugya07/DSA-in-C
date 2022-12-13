@@ -14,7 +14,7 @@ struct Queue{
 };
 
 int isFull(struct Queue *q){
-    if(q->b==q->size-1){
+    if(q->b == q->size-1){
         return 1;
     }
     return 0;
