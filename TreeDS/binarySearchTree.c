@@ -133,7 +133,11 @@ void insert(struct node *root, int key)
 //case2: node is no leaf node
 //case3: node is root
 struct node *inOrderPredecessor(struct node *root){
-    root = root->left;
+    if(root->left != NULL){
+        root = root->left;
+    }else{
+        return root->right;
+    }
     while(root->right != NULL){
         root = root->right;
     }
@@ -161,21 +165,35 @@ struct node *deleteNode(struct node *root, int value){
         iPre = inOrderPredecessor(root);
         root->data = iPre->data;
         root->left = deleteNode(root->left , iPre->data);
+        root->right = deleteNode(root->right , iPre->data);
     }
     return root;
 } 
  
+ void levelOrder(struct node *root){
+    struct node *queue[100];
+    int front = 0, rear = 0;
+    queue[rear++] = root;
+    while(front!=rear){
+        struct node *temp = queue[front++];
+        printf("%d ", temp->data);
+        if(temp->left!=NULL)
+            queue[rear++] = temp->left;
+        if(temp->right!=NULL)
+            queue[rear++] = temp->right;
+    }
+}
 int main()
 {
-    struct node *root = newNode(10);
-    struct node *p1 = newNode(4);
-    struct node *p2 = newNode(15);
+    struct node *root = newNode(40);
+    struct node *p1 = newNode(25);
+    struct node *p2 = newNode(70);
     root->left = p1;
     root->right = p2;
-    p1->left = newNode(1);
-    p1->right = newNode(6);
-    p2->left = newNode(11);
-    p2->right = newNode(16);
+    p1->left = newNode(22);
+    p1->right = newNode(35);
+    p2->left = newNode(60);
+    p2->right = newNode(80);
 
     // printf("\n%d ", isBST(root));
 
@@ -189,11 +207,14 @@ int main()
     // {
     //     printf("\nElement Not found");
     // }
-
-    inorder(root);
+    insert(root , 65);
+    insert(root , 30);
+    insert(root , 10);
+    insert(root , 90);
+    // inorder(root);
     printf("\n");
-    deleteNode(root , 11);
-    inorder(root);
+    deleteNode(root , 70);
+    levelOrder(root);
 
     return 0;
 }

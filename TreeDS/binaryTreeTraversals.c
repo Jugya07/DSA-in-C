@@ -38,7 +38,7 @@ void inorder(struct node *root){
     if(root != NULL){
         inorder(root->left);
         printf("%d ",root->data);
-        inorder(root->left);
+        inorder(root->right);
     }
 }
 
